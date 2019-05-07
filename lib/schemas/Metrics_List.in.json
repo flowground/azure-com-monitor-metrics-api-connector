@@ -1,0 +1,55 @@
+{
+    "type": "object",
+    "properties": {
+        "resourceUri": {
+            "required": true,
+            "type": "string"
+        },
+        "timespan": {
+            "required": false,
+            "type": "string"
+        },
+        "interval": {
+            "required": false,
+            "type": "string",
+            "format": "duration"
+        },
+        "metricnames": {
+            "required": false,
+            "type": "string"
+        },
+        "aggregation": {
+            "required": false,
+            "type": "string"
+        },
+        "top": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "orderby": {
+            "required": false,
+            "type": "string"
+        },
+        "resultType": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Data",
+                "Metadata"
+            ]
+        },
+        "metricnamespace": {
+            "required": false,
+            "type": "string"
+        },
+        "_filter": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
